@@ -1,0 +1,208 @@
+{
+  "components": [
+    {
+      "id": "button",
+      "name": "Button",
+      "description": "A versatile button component with multiple variants and sizes.",
+      "category": "Form",
+      "preview": {
+        "type": "dynamic"
+      },
+      "demoKey": "button-demo",
+      "componentFile": "@/components/ui/button",
+      "usage": "Buttons are used to trigger actions and navigate users through your application.",
+      "props": [
+        {
+          "name": "variant",
+          "type": "string",
+          "default": "default",
+          "description": "The visual style variant of the button"
+        },
+        {
+          "name": "size",
+          "type": "string",
+          "default": "default",
+          "description": "The size of the button"
+        },
+        {
+          "name": "asChild",
+          "type": "boolean",
+          "default": "false",
+          "description": "Change the default rendered element for the one passed as a child"
+        }
+      ]
+    },
+    {
+      "id": "card",
+      "name": "Card",
+      "description": "A flexible card component with multiple sub-components.",
+      "category": "Layout",
+      "preview": {
+        "type": "dynamic"
+      },
+      "demoKey": "card-demo",
+      "componentFile": "@/components/ui/card",
+      "usage": "Cards are used to group related content and actions in a contained format.",
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "description": "Additional CSS classes to apply to the card"
+        }
+      ]
+    },
+    {
+      "id": "input",
+      "name": "Input",
+      "description": "A styled form input component with proper accessibility.",
+      "category": "Form",
+      "preview": {
+        "type": "dynamic"
+      },
+      "demoKey": "input-demo",
+      "componentFile": "@/components/ui/input",
+      "usage": "Input fields are used to collect user input in forms and interactive interfaces.",
+      "props": [
+        {
+          "name": "type",
+          "type": "string",
+          "default": "text",
+          "description": "The input type (text, email, password, etc.)"
+        },
+        {
+          "name": "placeholder",
+          "type": "string",
+          "description": "Placeholder text for the input"
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": "false",
+          "description": "Whether the input is disabled"
+        }
+      ]
+    },
+    {
+      "id": "badge",
+      "name": "Badge",
+      "description": "A small status descriptor for UI elements.",
+      "category": "Display",
+      "preview": {
+        "type": "dynamic"
+      },
+      "demoKey": "badge-demo",
+      "componentFile": "@/components/ui/badge",
+      "usage": "Badges are used to display status, labels, or counts in a compact form.",
+      "props": [
+        {
+          "name": "variant",
+          "type": "string",
+          "default": "default",
+          "description": "The visual style variant of the badge"
+        }
+      ]
+    },
+    {
+      "id": "avatar",
+      "name": "Avatar",
+      "description": "An avatar component for displaying user profile images.",
+      "category": "Display",
+      "preview": {
+        "type": "dynamic"
+      },
+      "demoKey": "avatar-demo",
+      "componentFile": "@/components/ui/avatar",
+      "usage": "Avatars are used to represent users and can display images or initials.",
+      "props": [
+        {
+          "name": "className",
+          "type": "string",
+          "description": "Additional CSS classes"
+        }
+      ]
+    },
+    {
+      "id": "accordion",
+      "name": "Accordion",
+      "description": "A collapsible content component.",
+      "category": "Navigation",
+      "preview": {
+        "type": "dynamic"
+      },
+      "demoKey": "accordion-demo",
+      "componentFile": "@/components/ui/accordion",
+      "usage": "Accordions are used to show and hide content in a collapsible manner.",
+      "props": [
+        {
+          "name": "type",
+          "type": "string",
+          "description": "Whether one or multiple items can be open"
+        },
+        {
+          "name": "collapsible",
+          "type": "boolean",
+          "description": "Whether items can be collapsed"
+        }
+      ]
+    },
+    {
+      "id": "tabs",
+      "name": "Tabs",
+      "description": "A set of layered sections of content.",
+      "category": "Navigation",
+      "preview": {
+        "type": "dynamic"
+      },
+      "demoKey": "tabs-demo",
+      "componentFile": "@/components/ui/tabs",
+      "usage": "Tabs are used to organize content into separate views.",
+      "props": [
+        {
+          "name": "defaultValue",
+          "type": "string",
+          "description": "The default active tab"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "description": "The controlled active tab"
+        }
+      ]
+    },
+    {
+      "id": "ai-telecalling-hero",
+      "name": "AI Telecalling Hero",
+      "description": "A modern, animated hero section for AI-powered telecalling dashboards.",
+      "category": "Display",
+      "preview": {
+        "type": "dynamic"
+      },
+      "demoKey": "ai-telecalling-hero-demo",
+      "componentFile": "@/components/ui/ai-telecalling-hero",
+      "usage": "Use this hero section to showcase AI-powered telecalling features and analytics in your dashboard or landing page.",
+      "props": []
+    }
+  ],
+  "categories": [
+    {
+      "id": "form",
+      "name": "Form",
+      "description": "Components for building forms and collecting user input"
+    },
+    {
+      "id": "layout",
+      "name": "Layout",
+      "description": "Components for structuring and organizing content"
+    },
+    {
+      "id": "display",
+      "name": "Display",
+      "description": "Components for displaying data and information"
+    },
+    {
+      "id": "navigation",
+      "name": "Navigation",
+      "description": "Components for navigation and content organization"
+    }
+  ]
+}

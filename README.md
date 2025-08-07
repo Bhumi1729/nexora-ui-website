@@ -1,107 +1,243 @@
-# RekitUI Website
+# Nexora UI
 
-A modern, professional website for RekitUI component library built with Next.js 14, TypeScript, and Tailwind CSS.
+<div align="center">
 
-## Features
+![Nexora UI Logo](https://img.shields.io/badge/Nexora-UI-000000?style=for-the-badge&logo=react&logoColor=white)
 
-- 🎨 **Beautiful Design** - Modern and clean interface inspired by shadcn/ui
-- 🌙 **Dark/Light Mode** - Seamless theme switching with next-themes
-- 📱 **Responsive Design** - Mobile-first responsive layout
-- 🧩 **Interactive Previews** - Live component previews with code toggle
-- 📋 **Copy-Paste Ready** - One-click code copying functionality
-- ⚡ **Fast Performance** - Optimized with Next.js 14 and Tailwind CSS
-- 🔍 **SEO Optimized** - Proper meta tags and structured data
+**A modern, professional React component library built with TypeScript and Tailwind CSS**
 
-## Getting Started
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue.svg)](https://www.typescriptlang.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-15.4.2-black.svg)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38B2AC.svg)](https://tailwindcss.com/)
 
-### Development
+[Demo](https://nexora-ui.vercel.app) • [Documentation](https://nexora-ui.vercel.app/docs) • [Components](https://nexora-ui.vercel.app/components)
 
-First, run the development server:
+</div>
+
+## ✨ Overview
+
+Nexora UI is a cutting-edge React component library that combines modern design principles with exceptional developer experience. Built with TypeScript and powered by Tailwind CSS v4, it offers professional-grade components that are accessible, customizable, and production-ready.
+
+### 🎯 Why Choose Nexora UI?
+
+- **🎨 Professional Design** - Sleek, modern components with a sophisticated black theme
+- **⚡ Lightning Fast** - Optimized for performance with minimal bundle size
+- **🔒 Type Safety** - 100% TypeScript with comprehensive type definitions
+- **♿ Accessibility First** - WCAG compliant components built with Radix UI primitives
+- **🎭 Theme Support** - Beautiful dark/light mode with smooth transitions
+- **📱 Responsive** - Mobile-first design that works on all devices
+- **🔧 Developer Experience** - IntelliSense support and comprehensive documentation
+
+## 🚀 Quick Start
+
+### Installation
 
 ```bash
-npm run dev
+npm install nexora-ui
 # or
-yarn dev
+yarn add nexora-ui
 # or
-pnpm dev
+pnpm add nexora-ui
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Basic Usage
 
-### Building
+```tsx
+import { Button, Card, CardContent, CardHeader, CardTitle } from 'nexora-ui'
 
-To build the project for production:
+function App() {
+  return (
+    <Card className="w-96">
+      <CardHeader>
+        <CardTitle>Welcome to Nexora UI</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <Button>Get Started</Button>
+      </CardContent>
+    </Card>
+  )
+}
+```
+
+## 🎨 Design System
+
+### Color Scheme
+Nexora UI features a professional black color scheme designed for modern applications:
+
+```css
+/* Primary Colors */
+--primary: 0 0% 9%        /* Deep black */
+--secondary: 0 0% 96%     /* Light gray */
+--accent: 0 0% 14.9%      /* Dark gray */
+--muted: 0 0% 96%         /* Subtle gray */
+
+/* Dark Mode Support */
+--primary-dark: 0 0% 98%  /* Near white */
+--secondary-dark: 0 0% 14.9% /* Dark gray */
+```
+
+### Typography
+- **Font Family**: Geist Sans for UI, Geist Mono for code
+- **Scale**: Responsive typography that adapts to screen size
+- **Weight**: Carefully chosen font weights for hierarchy
+
+### Animations
+- **Hover Effects**: Subtle lift and glow animations
+- **Transitions**: Smooth 300ms cubic-bezier transitions
+- **Micro-interactions**: Delightful feedback for user actions
+
+## 🏗️ Project Architecture
+
+```
+nexora-ui/
+├── app/                      # Next.js App Router
+│   ├── components/          # Component showcase pages
+│   │   ├── [slug]/         # Individual component pages
+│   │   └── page.tsx        # Components overview
+│   ├── docs/               # Documentation pages
+│   ├── api/                # API routes for demos
+│   ├── globals.css         # Global styles & design tokens
+│   ├── layout.tsx          # Root layout with providers
+│   └── page.tsx            # Homepage with hero section
+├── components/              # React component library
+│   ├── ui/                 # Core UI components
+│   │   ├── button.tsx      # Button component with variants
+│   │   ├── card.tsx        # Card system components
+│   │   ├── input.tsx       # Input field component
+│   │   └── ...             # Additional UI components
+│   ├── layout/             # Layout components
+│   │   ├── header.tsx      # Navigation header
+│   │   ├── footer.tsx      # Site footer
+│   │   └── sidebar.tsx     # Component navigation
+│   ├── docs/               # Documentation components
+│   │   ├── component-preview.tsx  # Live preview system
+│   │   └── code-block.tsx  # Syntax highlighted code
+│   ├── demos/              # Component demonstrations
+│   └── theme/              # Theme management
+├── data/                   # Static data and configuration
+│   └── components.json     # Component metadata
+└── lib/                    # Utilities and helpers
+    ├── utils.ts            # Utility functions
+    └── demo-utils.ts       # Demo helper functions
+```
+
+## 🛠️ Technology Stack
+
+### Core Technologies
+- **[Next.js 15.4.2](https://nextjs.org/)** - React framework with App Router
+- **[React 19.1.0](https://react.dev/)** - Latest React with concurrent features
+- **[TypeScript](https://www.typescriptlang.org/)** - Static type checking
+- **[Tailwind CSS v4](https://tailwindcss.com/)** - Utility-first CSS framework
+
+### UI & Styling
+- **[Radix UI](https://www.radix-ui.com/)** - Unstyled, accessible components
+- **[class-variance-authority](https://cva.style/)** - Type-safe component variants
+- **[Framer Motion](https://www.framer.com/motion/)** - Production-ready animations
+- **[Lucide React](https://lucide.dev/)** - Beautiful icon library
+
+### Developer Experience
+- **[next-themes](https://github.com/pacocoursey/next-themes)** - Theme switching
+- **[tailwind-merge](https://github.com/dcastil/tailwind-merge)** - Merge Tailwind classes
+- **ESLint & Prettier** - Code quality and formatting
+
+## 🚀 Development
+
+### Prerequisites
+- Node.js 18+ 
+- npm/yarn/pnpm
+
+### Local Development
 
 ```bash
+# Clone the repository
+git clone https://github.com/Bhumi1729/nexora-ui-website.git
+cd nexora-ui-website
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Open http://localhost:3000
+```
+
+### Building for Production
+
+```bash
+# Create production build
 npm run build
+
+# Start production server
 npm start
 ```
 
-## Project Structure
+### Code Quality
 
-```
-├── app/                    # Next.js App Router pages
-│   ├── components/        # Components showcase
-│   ├── docs/             # Documentation
-│   ├── globals.css       # Global styles with design system
-│   ├── layout.tsx        # Root layout with theme provider
-│   └── page.tsx          # Homepage
-├── components/            # React components
-│   ├── ui/               # RekitUI components (Button, Card, Input)
-│   ├── layout/           # Layout components (Header, Footer)
-│   ├── docs/             # Documentation components
-│   └── theme/            # Theme components
-└── lib/                  # Utilities and helpers
-    └── utils.ts          # cn utility and helper functions
+```bash
+# Lint code
+npm run lint
+
+# Format code
+npm run format
+
+# Type check
+npm run type-check
 ```
 
-## Key Features
+## 📖 Documentation
 
-### Component Library
-- **Button** - Multiple variants and sizes
-- **Card** - Flexible card system with sub-components
-- **Input** - Styled form inputs with accessibility
+### Component Documentation
+Each component includes:
+- **Live Preview** - Interactive component demonstrations
+- **Code Examples** - Copy-paste ready code snippets
+- **Props API** - Comprehensive prop documentation
+- **Accessibility** - ARIA compliance and keyboard navigation
+- **Customization** - Styling and variant options
 
-### Documentation System
-- Interactive component previews
-- Copy-to-clipboard functionality
-- Code syntax highlighting
-- Responsive design patterns
+### Design Guidelines
+- **Design Principles** - Core design philosophy
+- **Color System** - Comprehensive color documentation
+- **Typography** - Font usage and hierarchy
+- **Spacing** - Consistent spacing system
+- **Animation** - Motion design principles
 
-### Theme System
-- CSS variables for consistent theming
-- Dark/light mode support
-- Smooth transitions and animations
+## 🔗 Related Projects
 
-## Technologies Used
+- **[Nexora UI CLI](https://github.com/Bhumi1729/nexora-ui)** - Command-line tool for installing Nexora UI components
+- **[NPM Package](https://www.npmjs.com/package/nexora-ui)** - Published CLI package on npm registry
 
-- **Next.js 14** - React framework with App Router
-- **TypeScript** - Type safety and developer experience
-- **Tailwind CSS** - Utility-first CSS framework
-- **next-themes** - Theme switching functionality
-- **Lucide React** - Beautiful icons
-- **class-variance-authority** - Component variants
-- **clsx & tailwind-merge** - Conditional styling
+## 🤝 Contributing
 
-## Related Projects
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
-- [RekitUI CLI](https://github.com/Atharvajoshiii/rekitui) - The CLI tool for installing components
-- [NPM Package](https://www.npmjs.com/package/rekitui) - Published CLI package
+### Development Workflow
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## Contributing
+## 📄 License
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## License
+## 🙏 Acknowledgments
 
-This project is licensed under the MIT License.
+- [shadcn/ui](https://ui.shadcn.com/) - Inspiration for component architecture
+- [Radix UI](https://www.radix-ui.com/) - Accessible component primitives
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Vercel](https://vercel.com/) - Deployment and hosting platform
 
 ---
 
-Built with ❤️ by [Atharva Joshi](https://github.com/Atharvajoshiii)
+<div align="center">
 
-## Deploy on Vercel
+**Built with ❤️ by the Bhumika Yadav**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[Website](https://nexora-ui.vercel.app) • [GitHub](https://github.com/Bhumi1729/nexora-ui-website) • [NPM](https://www.npmjs.com/package/nexora-ui)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+</div>
+
+
